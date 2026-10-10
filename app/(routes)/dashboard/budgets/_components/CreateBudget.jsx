@@ -87,7 +87,7 @@ function CreateBudget({ refreshData }) {
                   className="text-lg"
                   onClick={() => setOpenEmojiPicker(!openEmojiPicker)}
                 >{emojiIcon}</Button>
-                <div className='absolute z-50'>
+                <div className='absolute z-20'>
                   {<EmojiPicker open={openEmojiPicker} onEmojiClick={(e) => { setEmojiIcon(e.emoji); setOpenEmojiPicker(false) }} />}
                 </div>
                 <div className='mt-2'>
